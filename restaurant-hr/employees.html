@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERV Restauran Manager | Сотрудники</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>ERV Restauran</span>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> График</a></li>
+                <li><a href="employees.html" class="active"><i class="fas fa-users"></i> Сотрудники</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Аналитика</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Настройки</a></li>
+            </ul>
+            <div class="user-profile">
+                <span>Администратор</span>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1><i class="fas fa-users"></i> Сотрудники</h1>
+            <p>Управление персоналом ресторана</p>
+        </section>
+
+        <section class="employee-controls">
+            <div class="controls-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Поиск сотрудников...">
+                </div>
+                <div class="filter-actions">
+                    <select class="filter-select">
+                        <option>Все должности</option>
+                        <option>Повар</option>
+                        <option>Официант</option>
+                        <option>Бармен</option>
+                        <option>Администратор</option>
+                    </select>
+                    <button class="btn-primary"><i class="fas fa-user-plus"></i> Добавить сотрудника</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="employees-container">
+            <div class="employees-grid">
+                <div class="employee-card">
+                    <div class="employee-card-header">
+                        <div class="employee-avatar large">ИИ</div>
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="employee-card-body">
+                        <h3>Иван Иванов</h3>
+                        <p class="employee-position">Повар</p>
+                        <p class="employee-contact"><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                        <p class="employee-contact"><i class="fas fa-envelope"></i> ivanov@example.com</p>
+                        <div class="employee-stats">
+                            <div class="stat">
+                                <span class="stat-value">42</span>
+                                <span class="stat-label">смены</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">98%</span>
+                                <span class="stat-label">посещаемость</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-card-actions">
+                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                        <button class="btn-action"><i class="fas fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-card-header">
+                        <div class="employee-avatar large">АП</div>
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="employee-card-body">
+                        <h3>Анна Петрова</h3>
+                        <p class="employee-position">Официант</p>
+                        <p class="employee-contact"><i class="fas fa-phone"></i> +7 (999) 234-56-78</p>
+                        <p class="employee-contact"><i class="fas fa-envelope"></i> petrova@example.com</p>
+                        <div class="employee-stats">
+                            <div class="stat">
+                                <span class="stat-value">38</span>
+                                <span class="stat-label">смены</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">95%</span>
+                                <span class="stat-label">посещаемость</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-card-actions">
+                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                        <button class="btn-action"><i class="fas fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-card-header">
+                        <div class="employee-avatar large">СС</div>
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="employee-card-body">
+                        <h3>Сергей Сидоров</h3>
+                        <p class="employee-position">Бармен</p>
+                        <p class="employee-contact"><i class="fas fa-phone"></i> +7 (999) 345-67-89</p>
+                        <p class="employee-contact"><i class="fas fa-envelope"></i> sidorov@example.com</p>
+                        <div class="employee-stats">
+                            <div class="stat">
+                                <span class="stat-value">40</span>
+                                <span class="stat-label">смены</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">100%</span>
+                                <span class="stat-label">посещаемость</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-card-actions">
+                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                        <button class="btn-action"><i class="fas fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-card-header">
+                        <div class="employee-avatar large">МК</div>
+                        <div class="employee-status vacation"></div>
+                    </div>
+                    <div class="employee-card-body">
+                        <h3>Мария Кузнецова</h3>
+                        <p class="employee-position">Администратор</p>
+                        <p class="employee-contact"><i class="fas fa-phone"></i> +7 (999) 456-78-90</p>
+                        <p class="employee-contact"><i class="fas fa-envelope"></i> kuznetsova@example.com</p>
+                        <div class="employee-stats">
+                            <div class="stat">
+                                <span class="stat-value">36</span>
+                                <span class="stat-label">смены</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">90%</span>
+                                <span class="stat-label">посещаемость</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-card-actions">
+                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                        <button class="btn-action"><i class="fas fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-card-header">
+                        <div class="employee-avatar large">ДВ</div>
+                        <div class="employee-status active"></div>
+                    </div>
+                    <div class="employee-card-body">
+                        <h3>Дмитрий Васильев</h3>
+                        <p class="employee-position">Повар</p>
+                        <p class="employee-contact"><i class="fas fa-phone"></i> +7 (999) 567-89-01</p>
+                        <p class="employee-contact"><i class="fas fa-envelope"></i> vasilev@example.com</p>
+                        <div class="employee-stats">
+                            <div class="stat">
+                                <span class="stat-value">41</span>
+                                <span class="stat-label">смены</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">97%</span>
+                                <span class="stat-label">посещаемость</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-card-actions">
+                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                        <button class="btn-action"><i class="fas fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+
+                <div class="employee-card">
+                    <div class="employee-card-header">
+                        <div class="employee-avatar large">ЕС</div>
+                        <div class="employee-status inactive"></div>
+                    </div>
+                    <div class="employee-card-body">
+                        <h3>Елена Смирнова</h3>
+                        <p class="employee-position">Официант</p>
+                        <p class="employee-contact"><i class="fas fa-phone"></i> +7 (999) 678-90-12</p>
+                        <p class="employee-contact"><i class="fas fa-envelope"></i> smirnova@example.com</p>
+                        <div class="employee-stats">
+                            <div class="stat">
+                                <span class="stat-value">22</span>
+                                <span class="stat-label">смены</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">85%</span>
+                                <span class="stat-label">посещаемость</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employee-card-actions">
+                        <button class="btn-action"><i class="fas fa-eye"></i></button>
+                        <button class="btn-action"><i class="fas fa-edit"></i></button>
+                        <button class="btn-action"><i class="fas fa-calendar-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="employee-stats-overview">
+            <h2>Общая статистика персонала</h2>
+            <div class="stats-overview-grid">
+                <div class="overview-card">
+                    <h3>24</h3>
+                    <p>Всего сотрудников</p>
+                </div>
+                <div class="overview-card">
+                    <h3>18</h3>
+                    <p>Активные сотрудники</p>
+                </div>
+                <div class="overview-card">
+                    <h3>3</h3>
+                    <p>В отпуске</p>
+                </div>
+                <div class="overview-card">
+                    <h3>96%</h3>
+                    <p>Средняя посещаемость</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ERV Restauran Manager</h3>
+                <p>Профессиональное решение для управления персоналом в ресторанном бизнесе</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@restaurant.ru</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule.html">График смен</a></li>
+                    <li><a href="employees.html">Сотрудники</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ERV Restauran. Михайлова Т 831-74.</p>
+        </div>
+    </footer>
+</body>
+</html>

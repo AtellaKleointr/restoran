@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERV Restauran Manager | График смен</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>ERV Restauran</span>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="schedule.html" class="active"><i class="fas fa-calendar-alt"></i> График</a></li>
+                <li><a href="employees.html"><i class="fas fa-users"></i> Сотрудники</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Аналитика</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Настройки</a></li>
+            </ul>
+            <div class="user-profile">
+                <span>Администратор</span>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1><i class="fas fa-calendar-alt"></i> График смен</h1>
+            <p>Управление расписанием сотрудников на неделю</p>
+        </section>
+
+        <section class="schedule-controls">
+            <div class="controls-container">
+                <div class="week-navigation">
+                    <button class="btn-secondary"><i class="fas fa-chevron-left"></i> Предыдущая</button>
+                    <h3>Неделя: 12-18 июня 2023</h3>
+                    <button class="btn-secondary">Следующая <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="schedule-actions">
+                    <button class="btn-primary"><i class="fas fa-plus"></i> Добавить смену</button>
+                    <button class="btn-secondary"><i class="fas fa-print"></i> Распечатать</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule-container">
+            <div class="schedule-table">
+                <div class="table-header">
+                    <div class="header-cell">Сотрудник</div>
+                    <div class="header-cell">Понедельник<br>12 июня</div>
+                    <div class="header-cell">Вторник<br>13 июня</div>
+                    <div class="header-cell">Среда<br>14 июня</div>
+                    <div class="header-cell">Четверг<br>15 июня</div>
+                    <div class="header-cell">Пятница<br>16 июня</div>
+                    <div class="header-cell">Суббота<br>17 июня</div>
+                    <div class="header-cell">Воскресенье<br>18 июня</div>
+                </div>
+
+                <div class="table-row">
+                    <div class="row-cell employee-info">
+                        <div class="employee-avatar">ИИ</div>
+                        <div class="employee-details">
+                            <strong>Иван Иванов</strong>
+                            <span>Повар</span>
+                        </div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift morning">Утро<br>9:00-17:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift evening">Вечер<br>17:00-01:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift morning">Утро<br>9:00-17:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift day">День<br>13:00-21:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift evening">Вечер<br>17:00-01:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift day">День<br>13:00-21:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift off">Выходной</div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="row-cell employee-info">
+                        <div class="employee-avatar">АП</div>
+                        <div class="employee-details">
+                            <strong>Анна Петрова</strong>
+                            <span>Официант</span>
+                        </div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift evening">Вечер<br>17:00-01:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift morning">Утро<br>9:00-17:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift off">Выходной</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift day">День<br>13:00-21:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift evening">Вечер<br>17:00-01:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift day">День<br>13:00-21:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift morning">Утро<br>9:00-17:00</div>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="row-cell employee-info">
+                        <div class="employee-avatar">СС</div>
+                        <div class="employee-details">
+                            <strong>Сергей Сидоров</strong>
+                            <span>Бармен</span>
+                        </div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift day">День<br>13:00-21:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift off">Выходной</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift evening">Вечер<br>17:00-01:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift morning">Утро<br>9:00-17:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift day">День<br>13:00-21:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift evening">Вечер<br>17:00-01:00</div>
+                    </div>
+                    <div class="row-cell shift-day">
+                        <div class="shift off">Выходной</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="legend">
+            <h3>Обозначения смен:</h3>
+            <div class="legend-items">
+                <div class="legend-item">
+                    <div class="legend-color morning"></div>
+                    <span>Утренняя смена (9:00-17:00)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color day"></div>
+                    <span>Дневная смена (13:00-21:00)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color evening"></div>
+                    <span>Вечерняя смена (17:00-01:00)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color off"></div>
+                    <span>Выходной</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ERV Restauran Manager</h3>
+                <p>Профессиональное решение для управления персоналом в ресторанном бизнесе</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@restaurant.ru</p>
+            </div>
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule.html">График смен</a></li>
+                    <li><a href="employees.html">Сотрудники</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ERV Restauran. Михайлова Т 831-74.</p>
+        </div>
+    </footer>
+</body>
+</html>
